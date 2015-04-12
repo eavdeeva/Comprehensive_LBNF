@@ -1,0 +1,72 @@
+%
+% A simple LaTeX template for Books
+%  (c) Aleksander Morgado <aleksander@es.gnu.org>
+%  Released into public domain
+%
+\RequirePackage{lineno} 
+\documentclass{article}
+\usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
+%\usepackage[latin1]{inputenc}
+%\usepackage{setspace}
+\usepackage{fancyhdr}
+%\usepackage{tocloft}
+\usepackage{verbatim}
+\usepackage{graphicx,amsmath,epsfig,color,amsfonts,relsize,subfigure}
+\usepackage{authblk}
+%\usepackage[running]{lineno}
+\newcommand{\fbinv} {\mbox{\ensuremath{\,\text{fb}^\text{$-$1}}}}
+\begin{document}
+
+ 
+%\pagestyle{empty}
+%\begin{flushleft}
+\pagenumbering{}
+% Set book title
+\title{\textbf{Long Beam Neutrino Facility and Neutrino Mixing}}
+
+\author{Ekaterina Avdeeva}
+
+\affil{University of Nebraska-Lincoln, USA}
+\maketitle
+%\end{flushleft}
+
+\begin{abstract}
+Paper for the Comprehensive Exam.
+\end{abstract}
+
+% 2nd page, thanks message
+%-------------------------------------------------------------------------------
+%\thispagestyle{empty}
+%\newpage
+
+
+% General definitions for all Chapters
+%-------------------------------------------------------------------------------
+
+% Define Page style for all chapters
+\pagestyle{fancy}
+% Delete the current section for header and footer
+\fancyhf{}
+% Set custom header
+\lhead[]{\thepage}
+\rhead[\thepage]{}
+
+% Set arabic (1,2,3...) page numbering
+\pagenumbering{arabic}
+\tableofcontents
+
+%
+% Not enumerated chapter
+%-------------------------------------------------------------------------------
+%\linenumbers
+\clearpage
+\input{Introduction}
+\input{TheoryOfNeutrinoOscillations}
+\input{ExperimentalMeasurementsAndOpenQuestions}
+\input{LBNF}
+\input{References}
+\clearpage
+
+
+
+\end{document}

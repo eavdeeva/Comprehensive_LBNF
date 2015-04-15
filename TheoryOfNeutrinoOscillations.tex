@@ -1,5 +1,21 @@
 \section{Theory of Neutrino Oscillations}
 \subsection{Two Neutrinos Case}
-Here the P() of nu mu -> nu e should be derived. Write formulas to start with but skip most of the algebra. Do not assume p1=p2
+%Lets consider two neutrinos case as it's described in Griffiths\ref{ref_Griffiths}.\\*
+Suppose there are only two neutrinos $\nu_e$ and $\nu_{\mu}$. Then true stationary states of the system would be the orthogonal combinations:\\*
+$\nu_1=\nu_{\mu}cos\theta-\nu_esin\theta$\\*
+$\nu_2=\nu_{\mu}sin\theta+\nu_ecos\theta$\\*
+Then, according to the quantum mechanics,\\*
+$\nu_1(t)=\nu_1(0)e^{\frac{-iE_1t}{h}}$, $\nu_2(t)=\nu_2(0)e^{\frac{-iE_2t}{h}}$\\*
+Suppose, at t=0 there were $\nu_e(0)=1$, $\nu_\mu(0)=0$\\*
+Then $\nu_1(0)=-sin\theta$, $\nu_2(0)=cos\theta$, $\nu_1(t)=-{sin\theta}e^{\frac{-iE_1t}{h}}$, $\nu_2(t)=-{cos\theta}e^{\frac{-iE_2t}{h}}$\\*
+Thus, we are getting the system:\\*
+$-{sin\theta}e^{-{{iE_1t} \over h}}=\nu_\mu(t)cos\theta-\nu_e(t)sin\theta$,\\*
+$-{sin\theta}e^{-{{iE_2t} \over h}}=\nu_\mu(t)sin\theta-\nu_e(t)cos\theta$\\*
+By solving this sytem for $\nu_e$ and $\nu_\mu$, one would get\\*
+$P_{\nu_e \rightarrow \nu_\mu}=|\nu_\mu(t)|^2=[{sin2\theta}sin{\frac{(E_1-E_2)t}{2h}}]^2$,\\*
+$P_{\nu_e \rightarrow \nu_e}=|\nu_e(t)|^2=1-[{sin2\theta}sin{\frac{(E_1-E_2)t}{2h}}]^2$\\*
+Thus, for freely travelling neutrinos, if $\nu_e$ was emmitted, at any point there is a certain probability to register $\nu_e$ or $\nu_\mu$ and those probablities change with time periodically, by $~[sin(At)]^2$ law. That's why the phenomenon is called the neutrino oscillations.
+Suppose momenta $p_1=p_2$. Then using $E^2=p^2+m^2$ and assuming $m_{1,2}<<E_{1,2}$, the probablities will take forms of\\*
+$P_{\nu_e \rightarrow \nu_\mu}=|\nu_\mu(t)|^2=[{sin2\theta}sin{\frac{(E_1-E_2)t}{2h}}]^2$,\\*  
 \subsection{Mixing Matrix}
 Consider three neutrino case and put matrix and common notations here

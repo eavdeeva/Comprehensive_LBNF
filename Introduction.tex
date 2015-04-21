@@ -1,4 +1,8 @@
 \section{Introduction}
+
+% after adding detector overview, might become 4 pages
+
+\subsection{Neutrinos as Fundamental Standard Model Particles}
 The Standard Model includes three charged leptons, three neutrinos and six quarks and their antiparticles which are splitted into three generations and can interact through gauge bosons (see \ref{fig:StandardModel}). The neutrinos. neutrinos are fundamental particles of the Standard Model.\ref{ref_PDG}\\
 Figure with Standard Model particles and interations. \\
 
@@ -39,8 +43,29 @@ There are three flavors of neutrino, one for each generation: electron neutrino,
   \end{center}
 \end{table}
 
-The lepton flavor numbers are conserved in almost all particle physics processes and the only violation of this law observed so far is the neutrino oscillations - the ability of neutrino to change flavor. This paper reviews the main idea which stands beyond the neutrion oscillations from the theoretical point of view and the related experimental measurements. Section [REFERENCE] gives theoretical derivation of the neutrino oscillations phenomenon for the two neutrinos case, introduces the mixing matrix and lists the its parameters. Section [REFERENCE] reviews the parameters which already has been measured in variety of neutrino experiments and which questions are still open. Section [REFERENCE] discusses the physical program and the technical charasteristics of the future experiment - the Long Beamline Neutrino Facility which is under construction in Fermilab now and is going to be one of the most important concentrations for the Fermilab and for the whole USA and Worldwide experimantal particle physics program in the nearest future.  
+The lepton flavor numbers are conserved in almost all particle physics processes and the only violation of this law observed so far is the neutrino oscillations - the ability of neutrino to change flavor. This paper reviews the main idea which stands beyond the neutrion oscillations from the theoretical point of view and the related experimental measurements. Section [REFERENCE] gives theoretical derivation of the neutrino oscillations phenomenon for the two neutrinos case, introduces the mixing matrix and lists the its parameters. Section [REFERENCE] reviews the parameters which already has been measured in variety of neutrino experiments and which questions are still open. Section [REFERENCE] discusses the physical program and the technical charasteristics of the future experiment - the Long Beamline Neutrino Facility which is under construction in Fermilab now and is going to be one of the most important concentrations for the Fermilab and for the whole USA and Worldwide experimantal particle physics program in the nearest future.
 
+\subsection{Neutrino Detection Techniques} 
+Neutrinos can scatter on detector electrons throug weak neutral current (Z-boson). In this interaction, electron would leave the nuclei and would be detected. By measuring electron momentum and energy, it would be possible to receive information about original neutrino erergy and momentum but there would be no information about neutrino flavor. Also, neutrinos can interact through weak charged current ($W^\pm$-bosons) and produce charged lepton ($e^\pm$, $\mu^\pm$ or - if tau-neutrino is energetic enough - $\tau^\pm$). The properties of charged lepton can be measured in the detector and then from momentum and energy conseravation laws, the original neutrino properties will be reconstructed. Lepton flavor numbers are always conserved in these reactions and therefore it would be possible to determine the flavor of neutrino too (electron neutrino can only produce electron, muon neutrino can only produce muon and tau-neutrino can only produce tau-lepton).
+The wikipedia page of Neutrino Detectors list the main detection techniques which make possible to register neutrinos \cite{ref_wiki_NeutrinoDetectors}:
+
+\begin{figure}
+\caption{Feynmann diagrams of neutrino scattering}
+\label{fig:MuonAndNeutronDecays}
+\centering
+\includegraphics[width=0.9\textwidth, keepaspectratio=true]{figs/neutrinoScattering.png}
+\\Feynmann diagrams of neutral current (NC, left), and neutral current (CC, middle and right) neutrino scattering.
+\end{figure}
+\begin{itemize}
+
+  \item Scintillators. Was used in the first experiment which registered antineutrinos - Savannah River nuclear reactor experiment. Water with cadmium chloride solution was used as a target. Antineutrinos from the reactor interacted with protons of the target as $\bar{\nu_e}+p \rightarrow n+e^+$. Then positron annilated with electron $e^+ + e^- \rightarrow \gamma + \gamma$ and the resulting photons are detected by scintillators. The neutron is captured by the cadmium nuclei with radiation of photon. This photon is also detected by the scintillator with delay of several microseconds. 
+  \item Radiochemical methods. Chlorino radiochemical detector was used in south dakota experiment: neutrino interacted with chlorine-37 atom and converted it to argon-37. Then argon atoms were separated and counted. The experiment was the first to indicate the Solar Neutrino Problem. Same idea is used in certain experiments with gallium $\rightarrow$ germanium trasformation. The radiochemical methods are only useful for counting neutrinos but can't measure their kinematic characteristics.
+  \item Cherenkov detectros. A charged particle travelling through the medium with speed $v>c/n$ where $c/n$ - is speed of light in this medium radiate photons which are called Cherenkov radiation. In general, this is threshold type of detection - particle is either detected or not. However, by having several layers with different n (refractive index), it's possible to differentiate charged particles by velocities better. Common working substance for Cherenkov detectors in neutrino physics are ice, water and heavy water.
+  \item Tracking calorimeters. For high energy neutrinos, neutral current weak interactions cause hadronic shower and charged current weak interactions cause electromagnetic shower. The showers produced by charged particle (product of original neutrino nteraction) identify track parameters, momentum and energy of charged particle.
+\end{itemize}
+
+
+\subsection{Overview of Open Questions in Neutrino Physics} 
 According Particle Data Group Review \ref{ref_PDG} the following questions will be the main priority to answer by current and future neutrino experiments:
 \begin{itemize}
   \item whether the massive neutrinos are Dirac or Majorana (Dirac neutrinos are... Majorana neutrinos are...)

@@ -15,12 +15,14 @@ FNAL - Fermilab National Accelerator Laboratory, SURF - Sanford Underground Rese
 Source of figure: \cite{ref_LBNFweb} 
 \end{frame}
 
-\begin{frame}
-\begin{figure}
-\label{fig:LBNF_FermilabAccComplex}
-\centering
-\includegraphics[width=0.95\textwidth, keepaspectratio=true]{figs/FermilabAccelerator.png}
-\end{figure}
+\begin{frame}\frametitle{$P(\nu_\mu \rightarrow \nu_e)$ at a baseline of 1300 km}
+  \scriptsize
+  \begin{figure}
+  \label{fig:LBNF_oscProbability}
+  \centering
+  \includegraphics[width=0.98\textwidth, keepaspectratio=true]{figs/LBNF_oscProbability.png}
+  \\$P(\nu_\mu \rightarrow \nu_e)$ at a baseline of 1300 km (as LBNF will have), as a function of neutrino energy. Left - neutrinos, right - antineutrinos. Source of figure: LBNF CDR draft, volume physics \cite{ref_LBNFdoc_volume-physics}
+  \end{figure}
 \end{frame}
 
 \begin{frame}\frametitle{LBNF. Beam Production System}
@@ -28,15 +30,20 @@ Source of figure: \cite{ref_LBNFweb}
 \begin{figure}
 \label{fig:LBNF_nuBeam}
 \centering
-\includegraphics[width=0.45\textwidth, keepaspectratio=true]{figs/LBNF_nuBeam.png}  
+\includegraphics[width=0.65\textwidth, keepaspectratio=true]{figs/LBNF_nuBeam.png}  
 \end{figure}
 The neutrino beam production at the LBNF. Source of figure: \cite{ref_LBNFweb}\\
-Pions (or kaons) are created: $p+p \rightarrow p+n+\pi^+$, $p+p \rightarrow p+\Delta^{++}+\pi^-$, $p+n \rightarrow p+p+\pi^-$, $p+n \rightarrow n+n+\pi^+$, $p+n \rightarrow p+\Delta^{-}+\pi^+$\\
-And then decay: $\pi^+ \rightarrow \mu^+\nu_\mu$, $\pi^- \rightarrow \mu^-\bar{\nu_\mu}$, $K^+ \rightarrow \mu^+\nu_\mu$, $K^- \rightarrow \mu^-\bar{\nu_\mu}$\\
-(Feynmann diagrams of these reactions are shown at the next slide)
+\begin{itemize}
+  \item Proton beam from Fermilab accelerator hits target
+  \item Protons scatter on target atoms and produce pions and kaons {\tiny (more details on the next slide)}
+  \item Charged pions and kaons are focused
+  \item And decay in the decay pipe, producing muon neutrino beam
+  \item Neutrinos are registered by near detector, $\sim 200$ m away from the target
+  \item And by far detector, $\sim 1300$ km away from the target
+\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{LBNF. Pions and kaon creation and decay}
+\begin{frame}\frametitle{LBNF. Feynmann diagrams of pions and kaons production and decay}
 \scriptsize
 \begin{figure}
 \label{fig:pionAndKaonProductions}
@@ -44,22 +51,23 @@ And then decay: $\pi^+ \rightarrow \mu^+\nu_\mu$, $\pi^- \rightarrow \mu^-\bar{\
 \includegraphics[width=0.48\textwidth, keepaspectratio=true]{figs/ppKaonProduction.png}\includegraphics[width=0.48\textwidth, keepaspectratio=true]{figs/ppPionProduction.png}  
 \end{figure}
 \begin{figure}
-\caption{Feynmann diagrams of charged pion and kaon decays to muon and muon antineutrino weakly through W-boson. Figures taken from \cite{ref_fig_pionandKaonDecays}.}
 \label{fig:pionAndKaonDecays}
 \centering
 \includegraphics[width=0.45\textwidth, keepaspectratio=true]{figs/kaonDecay.jpg}\includegraphics[width=0.45\textwidth, keepaspectratio=true]{figs/pionDecay.jpg} 
 \end{figure}
+\tiny Source of bottom figure \cite{ref_fig_pionandKaonDecays}.
 \end{frame}
 
-\begin{frame}\frametitle{LBNF. Near Detector}
+\begin{frame}\frametitle{LBNF. Near Detector Cavern}
 \scriptsize
 \begin{figure}
 \label{fig:nearDetector}
 \centering
-\includegraphics[width=0.25\textwidth, keepaspectratio=true]{figs/nearDetector_project.png}
+\includegraphics[width=0.35\textwidth, keepaspectratio=true]{figs/nearDetector_project.png}\includegraphics[width=0.55\textwidth, keepaspectratio=true]{figs/nearDetector_Text.png}
 \end{figure}
-\scriptsize
-Quoting the LBNF website \cite{ref_LBNFweb}, "The DUNE near detector will require LBNF to excavate and provision a cavern 200 ft (60 m) below grade on the Fermilab site and to construct a surface building directly above it. An elevator will provide the primary access between the two spaces; the stairway shown is planned for emergency egress. This complex will be constructed a minimum of 690 feet (210 m) downstream of the beamline target."
+%\scriptsize
+%Deep Underground Neutrino Experiment (DUNE)
+%Quoting the LBNF website \cite{ref_LBNFweb}, "The DUNE near detector will require LBNF to excavate and provision a cavern 200 ft (60 m) below grade on the Fermilab site and to construct a surface building directly above it. An elevator will provide the primary access between the two spaces; the stairway shown is planned for emergency egress. This complex will be constructed a minimum of 690 feet (210 m) downstream of the beamline target."
 \end{frame}
 
 \begin{frame}\frametitle{LBNF. Near Detector}
@@ -70,37 +78,9 @@ Quoting the LBNF website \cite{ref_LBNFweb}, "The DUNE near detector will requir
 \includegraphics[width=0.50\textwidth, keepaspectratio=true]{figs/nearDetector.png}
 \end{figure}
 \scriptsize
-The scheme of the near detector is shown at the fig. \ref{fig:nearDetector}. The detector will consist of central Straw-Tube Tracker (STT) modules, electromagnetic calorimeter (ECAL), magnet coils of 0.4T and muon identification system consisting of Resistive Plate Chamber (RPC) modules. The neutrinos would come from the bottom left corner of the picture, to the End RPCs.\\
+The detector will consist of central Straw-Tube Tracker (STT) modules, electromagnetic calorimeter (ECAL), magnet coils of 0.4T and muon identification system consisting of Resistive Plate Chamber (RPC) modules. The neutrinos would come from the bottom left corner of the picture, to the End RPCs.\\
 \end{frame}
 
-\begin{frame}\frametitle{LBNF. Near Detector Physics}
-\scriptsize
-\tiny
-\begin{itemize}
-  \item absolute flux measurement
-  \item relative neutrino and antineutrino flux measurements
-  \item flavor content of the neutrino source
-  \item determination of the $E_\nu$-scale of neutrinos versus antineutrinos
-  \item event-by-event measurements of NC interactions
-  \item measurement of $\pi^0$, $\pi^\pm$, $K^\pm$, p, $K^0_S$ and $\Lambda$ in the NC and CC
-%  \item "quasi-elastic and resonance measurements"
-  \item nucleon structure, parton distribution functions and QCD studies
-%  \item neutrino-argon interactions and nuclear effects
-  \item precision measurements of electroweak physics
-%  \item isospin physics and the Adler sum rule
-%  \item measurement of the nuclean strangeness content
-\end{itemize}
-
-More specifically, the list of the physics measurements related to the neutrino oscillations to be performed by the Near Detector includes:
-\begin{itemize}
-  \item fluxes of $\nu_\mu$, $\bar{\nu_\mu}$, $\nu_e$ and $\bar{\nu_e}$. To distinguish between flavors, the measurement should rely on charged current interaction (fig. \ref{fig:MuonAndNeutronDecays}, middle and right) and measure the products of these interactions $\mu^-$, $\mu^+$, $e^-$, and $e^+$. (While the beam production system has the highest probability to produce muon neutrinos, the production of certain number electron neutrinos is also possible, for example, from charged kaon decays)
-  \item $\nu_e$-$\bar{\nu_e}$ assymetries. For that, it's important not only distinguish between $\mu^\pm$ and $e^\pm$ but also between $e^-$ and $e^+$.
-  \item the absolute $\nu_\mu$ and $\bar{\nu_\mu}$ fluxes need to be measured with $\simeq{3\%}$ precision in the neutrino energy range 0.5-8 GeV
-  \item cross section of NC versus CC processes as a function of hadronic energy. NC is one of major backrounds which contribute to neutrino oscillation measurement
-  \item yields of $\pi_0$ and photons. These particles are the most significant background to $\nu_e$ and $\bar{\nu_e}$ contamination
-  \item fractions of the $\pi^\pm$ into the CC and the NC hadronic jets.    
-\end{itemize} 
-\end{frame}
 
 \begin{frame}\frametitle{LBNF. SURF (Far Detector Site)}
 \begin{figure}
@@ -128,7 +108,7 @@ More specifically, the list of the physics measurements related to the neutrino 
 \end{figure}
 \end{frame}
 
-\begin{frame}\frametitle{LBNF Compared to the Other Experiments}
+\begin{frame}\frametitle{LBNF Compared to the Other Experiments \cite{ref_LBN_OscExpReview}}
 \tiny
   \begin{tabular}{|c|c|c|c|c|c|}
               & KEK (K2K) & NuMI & CNGS & T2K & LBNF (DUNE)\\ \hline
@@ -148,17 +128,4 @@ More specifically, the list of the physics measurements related to the neutrino 
      FD mass     & 50 kt       & 5.4 kt              & 0.76 kt (ICARUS)   & 50 kt       & 40 kt\\ 
                  &             &                     & 1.25 kt (OPERA)    &             & \\ \hline 
  \end{tabular}
-\end{frame}
-
-\begin{frame}\frametitle{LBNF. Status}
-\scriptsize
-\begin{itemize}
-  \item Experiment is under development
-  \item Conceptual Design Report (CDR) drafts are partially available
-  \item First collaboration meeting took place on April 16th-18th, 2015
-  \item Fermilab accelerator is available 
-  \item Cavern for the near detector to be excavated
-  \item Caverns for the far detector exist (former Homestake mine)
-  \item far detector installation planned on 2021-2022
-\end{itemize}
 \end{frame}

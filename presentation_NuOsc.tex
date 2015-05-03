@@ -52,12 +52,28 @@ History of the neutrino oscillations discovery is described in the Griffiths tex
 \end{figure}
 \end{frame}
 
-\begin{frame}\frametitle{Theory. Two Neutrinos Case}
+\begin{frame}\frametitle{Theory. Simplified Model for Illustration: \\ Two Neutrinos in Vacuum}
   \scriptsize
+  Assume:
+  \begin{itemize}
+     \item There are only two neutrinos exist, $\nu_e$ and $\nu_\mu$
+     \item Stationary states of the free-particle Hamiltonian are $\nu_1$, $\nu_2$ (not $\nu_e$, $\nu_\mu$)
+  \end{itemize}
+
   \begin{center}
-  $\nu_1=\nu_{\mu}cos\theta-\nu_esin\theta$\\
-  $\nu_2=\nu_{\mu}sin\theta+\nu_ecos\theta$\\
+  $ \begin{pmatrix} \nu_1 \\ \nu_2 \\ \end{pmatrix}
+  = U_{mixing}\cdot \begin{pmatrix} \nu_{\mu} \\ \nu_{e} \\ \end{pmatrix} = 
+  \begin{pmatrix}
+  cos\theta & -sin\theta \\
+  sin\theta & cos\theta \\
+  \end{pmatrix}
+  \cdot
+  \begin{pmatrix} \nu_{\mu} \\ \nu_{e} \\ \end{pmatrix}$\\
+
+%  $\nu_1=\nu_{\mu}cos\theta-\nu_esin\theta$\\
+%  $\nu_2=\nu_{\mu}sin\theta+\nu_ecos\theta$\\
   \end{center}
+
   \begin{center}
   $\nu_1(t)=\nu_1(0)e^{\frac{-iE_1t}{\hbar}}$, $\nu_2(t)=\nu_2(0)e^{\frac{-iE_2t}{\hbar}}$ $\leftarrow$ from quantum mechanics\\
   \end{center}
@@ -75,7 +91,7 @@ History of the neutrino oscillations discovery is described in the Griffiths tex
   \end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Theory. Three Neutrinos Case}
+\begin{frame}\frametitle{Theory. Three Neutrinos Mixing Matrix}
   \scriptsize
   Mixing is determined by Pontecorvo-Maki-Nakagava-Sakata (PMNS) matrix:\\
   \begin{center}
@@ -113,23 +129,7 @@ History of the neutrino oscillations discovery is described in the Griffiths tex
   \end{center}
 \end{frame} 
 
-\begin{frame}\frametitle{Summary of Available Experimental Results according to Particle Data Group \cite{ref_PDG}}
-  \scriptsize
-  \begin{itemize}
-    \item $sin^2(2\theta_{12})$=$0.846\pm0.021$
-    \item $sin^2(2\theta_{23})$=$0.999^{+0.001}_{-0.018}$ $\leftarrow$ if $m_3>m_2>m_1$
-    \item $sin^2(2\theta_{23})$=$1.000^{+0.000}_{-0.017}$ $\leftarrow$ if $m_1>m_2>m_3$
-    \item $sin^2(\theta_{13})$=$(9.3\pm0.8)\cdot10^{-2}$
-    \item $|{\Delta}m^2_{21}|$=$(7.53\pm0.18) \cdot 10^{-5} eV^2$
-    \item $|{\Delta}m^2_{32}|$=$(2.44\pm0.06) \cdot 10^{-3} eV^2$ $\leftarrow$ if $m_3>m_2>m_1$
-    \item $|{\Delta}m^2_{32}|$=$(2.52\pm0.07) \cdot 10^{-3} eV^2$ $\leftarrow$ if $m_1>m_2>m_3$
-    \item CP-violation phase $\delta_{CP}$ - {\large not measured}
-    \item mass hierarchy - {\large not determined}
-    \item absolute values of $\nu$ masses - {\large not measured}
-  \end{itemize} 
-\end{frame}
-
-\begin{frame}\frametitle{$P(\nu_\mu \rightarrow \nu_e)$ in presence of matter in uniform density approximation  \cite{ref_LBNFdoc_volume-physics}}
+\begin{frame}\frametitle{$P(\nu_\mu \rightarrow \nu_e)$ in Presence of Matter in Uniform Density Approximation  \cite{ref_LBNFdoc_volume-physics}, Three Neutrinos Mixing}
 \scriptsize
 
 \begin{center}
@@ -149,10 +149,29 @@ History of the neutrino oscillations discovery is described in the Griffiths tex
 \end{center}
 
 \begin{center}
-\scriptsize where $\Delta_{ij}={\Delta}m^2_{ij}L/4E$, and $a={G_F}{N_e}/sqrt(2)$\\
+\scriptsize where $\Delta_{ij}={\Delta}m^2_{ij}L/4E$, and $a={G_F}{N_e}/\sqrt(2)$\\
 \end{center}
 
-\scriptsize 
+\scriptsize \textbf{Parameters which can be measured: $\theta_{12}$, $\theta_{23}$, $\theta_{13}$, $\delta_{CP}$, ${\Delta}m^2_{21}$, ${\Delta}m^2_{32}$} \\
 \scriptsize for $P(\bar{\nu_\mu} \rightarrow \bar{\nu_e})$: $\delta_{CP} \rightarrow -\delta_{CP}$ ({\tiny because of $\nu-\bar{\nu}$ assymetry for $\delta_{CP}$}); $a \rightarrow -a$ ({\tiny because only $e^-$ present in the Earth, not $e^+$})\\
-\scriptsize effect $a \rightarrow -a$ increases with L $\rightarrow$ more sensitivity to mass hierarchy for experiments with larger baseline
+\scriptsize effect $a \rightarrow -a$ increases with L $\rightarrow$ more sensitivity to mass hierarchy for experiments with larger baseline\\
+\tiny (Note: if $m_3>m_2>m_1$ - it's called normal mass hierarchy, if $m_1>m_2>m_3$ - it's called inverse mass hierarchy)\\
+
 \end{frame}
+
+\begin{frame}\frametitle{Summary of Available Experimental Results according to Particle Data Group \cite{ref_PDG}}
+  \scriptsize
+  \begin{itemize}
+    \item $sin^2(2\theta_{12})$=$0.846\pm0.021$
+    \item $sin^2(2\theta_{23})$=$0.999^{+0.001}_{-0.018}$ $\leftarrow$ if $m_3>m_2>m_1$
+    \item $sin^2(2\theta_{23})$=$1.000^{+0.000}_{-0.017}$ $\leftarrow$ if $m_1>m_2>m_3$
+    \item $sin^2(\theta_{13})$=$(9.3\pm0.8)\cdot10^{-2}$
+    \item $|{\Delta}m^2_{21}|$=$(7.53\pm0.18) \cdot 10^{-5} eV^2$
+    \item $|{\Delta}m^2_{32}|$=$(2.44\pm0.06) \cdot 10^{-3} eV^2$ $\leftarrow$ if $m_3>m_2>m_1$
+    \item $|{\Delta}m^2_{32}|$=$(2.52\pm0.07) \cdot 10^{-3} eV^2$ $\leftarrow$ if $m_1>m_2>m_3$
+    \item CP-violation phase $\delta_{CP}$ - {\large not measured}
+    \item mass hierarchy - {\large not determined}
+    \item absolute values of $\nu$ masses - {\large not measured}
+  \end{itemize}
+\end{frame}
+

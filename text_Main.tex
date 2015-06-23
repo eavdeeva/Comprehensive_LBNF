@@ -1,0 +1,82 @@
+%
+% A simple LaTeX template for Books
+%  (c) Aleksander Morgado <aleksander@es.gnu.org>
+%  Released into public domain
+%
+\RequirePackage{lineno}
+\linenumbers 
+\documentclass{article}
+\usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
+%\usepackage[latin1]{inputenc}
+%\usepackage{setspace}
+\usepackage{fancyhdr}
+%\usepackage{tocloft}
+\usepackage{verbatim}
+\usepackage{graphicx,amsmath,epsfig,color,amsfonts,relsize,subfigure}
+\usepackage{authblk}
+\usepackage[pdftex]{graphicx}
+\usepackage{sidecap}
+%\usepackage[running]{lineno}
+\newcommand{\fbinv} {\mbox{\ensuremath{\,\text{fb}^\text{$-$1}}}}
+\begin{document}
+
+ 
+%\pagestyle{empty}
+%\begin{flushleft}
+\pagenumbering{}
+% Set book title
+\title{\textbf{Long Baseline Neutrino Facility}}
+
+\author{Ekaterina Avdeeva}
+
+\affil{University of Nebraska-Lincoln, USA}
+\maketitle
+%\end{flushleft}
+
+\begin{abstract}
+The paper reviews the techniques of the Long Baseline Neutrino Facility, which is currently under construction, as the most ambitious experiment to study neutrino oscillations in the World. General properties of neutrinos, theoretical and historical backgrounds of the oscillations, techniques and achievements of several other experiments are also discussed. The paper is prepared as a part of the author's Comprehensive Exam at the Physics\&Astronomy Department of the University of Nebraska-Lincoln.
+\end{abstract}
+
+% 2nd page, thanks message
+%-------------------------------------------------------------------------------
+%\thispagestyle{empty}
+%\newpage
+
+
+% General definitions for all Chapters
+%-------------------------------------------------------------------------------
+
+% Define Page style for all chapters
+\pagestyle{fancy}
+% Delete the current section for header and footer
+\fancyhf{}
+% Set custom header
+\lhead[]{\thepage}
+\rhead[\thepage]{}
+
+% Set arabic (1,2,3...) page numbering
+\pagenumbering{arabic}
+\tableofcontents
+
+%
+% Not enumerated chapter
+%-------------------------------------------------------------------------------
+%\linenumbers
+
+\clearpage
+\input{text_Introduction}
+\clearpage
+\input{text_Theory}
+\clearpage
+\input{text_HistoryAndStatus}
+\clearpage
+\input{text_LBNF_setup}
+\clearpage
+\input{text_Conclusions}
+\clearpage
+\input{text_References}
+\clearpage
+
+
+
+\end{document}

@@ -1,36 +1,6 @@
-\section{Neutrino Oscillations. History and Status}
-\subsection{First Discovery and Confirmation}
-History of the neutrino oscillations discovery is described in \cite{ref_Griffiths}, chapter 11. The first evidence of the neutrino oscillations had place in the Homestake experiment in 1968 with solar neutrinos which registered number of neutrinos three times smaller then theoretically predicted. The phenomenon was called "solar neutrino problem". This experiment used Chlorino radiochemical detector. Neutrino interacted with chlorine-37 atom and converted it to argon-37 through the reaction $\nu_e+^{37}Cl \rightarrow ^{37}Ar+e$ or, at more fundamental level, $\nu_e+n \rightarrow p+e$. Then argon atoms were separated and counted. The detector was sensitive to electron neutrinos only. Soon after Bruno Pontecorvo proposed the explanation to the solar neutrino problem that neutrino can change it's flavor on it's way from the Sun to the detector. The theory was confirmed  by Super-Kamiokande and Sudbury Neutrino Observatory (SNO) collaborations. This experiment used water detector and could register any sort of neutrino through the $e+\nu \rightarrow e+\nu$ scattering. But the NC scattering can not distinguish between different neutrino flavors and also electron neutrinos could interact through CC which made detection efficiency of electron neutrinos 6.5 times higher than other flavors (the left Feynmann diagram at fig. \ref{fig:NuScattering} is possible for any neutrino flavor but the middle and right diagrams - only for electron neutrino). Thus, the super -Kamiokande were able to register any neutrino but couldn't distinguish between neutrino flavor and had lower detection efficiency for non-electron neutrinos. They assumed all neutrinos to be electron neutrinos and recorded $45\%$ of the predicted amount. Then the SNO which used heavy water and were able to measure separately electron and total neutrino flux, confirmed that some of neutrinos coming from the Sun are registered as $\nu_\mu$ and $\nu_\tau$. The reactions in the working volumes of the three detectors can be summarized as the following:\\
-\begin{itemize}
-\item Homestake experiment (1968): $\nu_e + ^{37}Cl \rightarrow ^{37}Ar+e$
-\item Super-Kamiokande experiment (1998): $\nu + e \rightarrow \nu + e$ 
-\item Solar neutrino observatory (2002): $\nu_e + d \rightarrow p+p+e$, $\nu+d \rightarrow n+p+\nu$, $\nu+e \rightarrow \nu+e$
-\end{itemize}
-The SNO reported $\nu_e$ flux to be $35\%$ of the predicted flux. Comparing it to the Super-Kamiokande results and knowing that Super-Kamiokande was 6.5 times less sensitive to $\nu_\mu$ and $\nu_\tau$, one could get $45\%=35\%+10\%$, $10\% \cdot 6.5 = 65\%$, $35\%+60\%=100\%$. After that, the neutrino oscillations theory is considered to be confirmed and the solar neutrino problem - resolved. 
-The schemes of the experiments mentioned are shown at the fig. \ref{fig:history_Schemes}.
+\section{Neutrino Oscillations. Theory}
 
-\begin{figure}
-\caption{Schemes of the Solar neutrino experiments: top: Homestake Experiment , bottom left: Super Kamiokande, bottom right: Sudbury Neutrino Oscillations. Sources of figures: \cite{ref_Homestake}, \cite{ref_SuperK}, \cite{ref_fig_SNOscheme}.}
-\label{fig:history_Schemes}
-\centering
-\includegraphics[width=0.80\textwidth, keepaspectratio=true]{figs/history_Homestake01.png}
-\includegraphics[width=0.50\textwidth, keepaspectratio=true]{figs/history_SuperK01.png}\includegraphics[width=0.30\textwidth, keepaspectratio=true]{figs/history_SNO01.png}
-\end{figure}
-
-\subsection{Neutrino Detection Techniques} 
-A particle detection techniques are based on the particle's ability to interact with the detector substance. Probability of neutrino to interact is very small but while most of neutrinos will pass through any detector being unnoticed, the neutrino physics experimentalists concentrate their best efforts on increasing this probability and on detecting those little porion of neutrinos which would interact wih the working substance. 
-Neutrinos can scatter on detector electrons throug weak neutral current (Z-boson). In this interaction, electron would leave the nuclei and would be detected. By measuring electron momentum and energy, it would be possible to receive information about original neutrino erergy and momentum but there would be no information about neutrino flavor. Also, neutrinos can interact through weak charged current ($W^\pm$-bosons) and produce charged lepton ($e^\pm$, $\mu^\pm$ or - if $\tau$-neutrino is energetic enough - $\tau^\pm$). The properties of charged lepton can be measured in the detector and then from momentum and energy conservation laws, the original neutrino properties will be reconstructed. Lepton flavor numbers are always conserved in these reactions and therefore it would be possible to determine the flavor of neutrino too (electron neutrino can only produce electron, muon neutrino can only produce muon and $\tau$-neutrino can only produce $\tau$-lepton).
-The wikipedia page of Neutrino Detectors list the main detection techniques which make possible to register neutrinos \cite{ref_wiki_NeutrinoDetectors}:
-
-\begin{itemize}
-  \item Scintillators. Was used in the first experiment which registered antineutrinos - Savannah River nuclear reactor experiment. Water with cadmium chloride solution was used as a target. Antineutrinos from the reactor interacted with protons of the target as $\bar{\nu_e}+p \rightarrow n+e^+$. Then positron annilated with electron $e^+ + e^- \rightarrow \gamma + \gamma$ and the resulting photons are detected by scintillators. The neutron is captured by the cadmium nuclei with radiation of photon. This photon is also detected by the scintillator with delay of several microseconds. 
-  \item Radiochemical methods. Chlorino radiochemical detector was used in the Homestake experiment described in the previous subsection. Same idea is used in certain experiments with gallium $\rightarrow$ germanium trasformation. The radiochemical methods are only useful for counting neutrinos but can't measure their kinematic characteristics.
-  \item Cherenkov detectros. A charged particle travelling through the medium with speed $v>c/n$ where $c/n$ - is speed of light in this medium radiate photons which are called Cherenkov radiation. The cherenkov radiation is further detected. Common working substance for this kind of detectors in neutrino physics are ice, water and heavy water.
-  \item Tracking calorimeters. For high energy neutrinos, NC weak interactions cause hadronic shower and CC weak interactions cause electromagnetic shower. The showers produced by charged particle (product of original neutrino interaction) identify track parameters, momentum and energy of the particle.
-\end{itemize}
-
-
-\subsection{Theory of the Neutrino Oscillations}
+\subsection{Model of Two-Neutrino Oscillations in Vacuum}
 Lets consider two neutrinos case as it's described in the chapter 11 of the Griffiths textbook \cite{ref_Griffiths}.\\
 Suppose there are only two neutrinos $\nu_e$ and $\nu_{\mu}$. Then true stationary states of the system would be the orthogonal combinations:\\
 
@@ -67,6 +37,10 @@ Suppose momenta $p_1=p_2$. Then using $E^2=p^2+m^2$ and assuming $m_{1,2}<<E_{1,
 \begin{center}
 $P_{\nu_e \rightarrow \nu_\mu}=|\nu_\mu(t)|^2=[{sin2\theta}sin{\frac{(E_1-E_2)t}{2\hbar}}]^2=[{sin2\theta}sin{\frac{(m_1^2-m_2^2)c^3}{4\hbar{E}}z}]^2$\\  
 \end{center}
+
+\subsection{Mechanism of Neutrinos Getting Mass}
+
+\subsection{Three-Neutrino Oscillation}
 
 Three neutrino case is described in the "Long-baseline Neutrino Oscillation Physics" section of the draft Conteptual Design Report (CDR) of the Long Baseline Neutrino Facility (LBNF). For three neutrino case, the oscillations are determined by complex unitary matrix which is called Pontecorvo-Maki-Nakagava-Sakata (PMNS) matrix:\\
 \begin{center}
@@ -120,11 +94,27 @@ One of the important questions in modern particle physics is why the quark mixin
 
 The \cite{ref_LBNFdoc_volume-physics} gives the following expression for $\nu_\mu \rightarrow \nu_e$ probability in presence of the Earth matter assuming it has constant density: \\
 \begin{center}
-$P(\nu_\mu \rightarrow \nu_e) \simeq sin^2{\theta_{23}}sin^2{2\theta_{13}}\frac{sin^2(\Delta_{13}-aL)}{(\Delta_{13}-aL)^2}\Delta^2_{31}+$\\
-$+sin2\theta_{23}sin2\theta_{13}sin2\theta_{12}\frac{sin(\Delta_{31}-aL)}{(\Delta_{31}-aL)}\Delta_{31}\frac{sin(aL)}{aL}\Delta_{21}cos(\Delta_{31}+\delta_{CP})+$\\
-$+cos^2\theta_{23}sin^2{2\theta_{12}}\frac{sin^2(aL)}{(aL)^2}\Delta^2_{21}$\\
-\end{center}
-\begin{center}
+
+\begin{equation}
+\label{eq:P_bigFormula}
+P(\nu_\mu \rightarrow \nu_e) \simeq P_1 + P_2 + P_3 
+\end{equation}
+
+\begin{equation}
+\label{eq:P_bigFormula_1}
+P_1 = sin^2{\theta_{23}}sin^2{2\theta_{13}}\frac{sin^2(\Delta_{13}-aL)}{(\Delta_{13}-aL)^2}\Delta^2_{31}
+\end{equation}
+
+\begin{equation}
+\label{eq:P_bigFormula_2}
+P_2 = sin2\theta_{23}sin2\theta_{13}sin2\theta_{12}\frac{sin(\Delta_{31}-aL)}{(\Delta_{31}-aL)}\Delta_{31}\frac{sin(aL)}{aL}\Delta_{21}cos(\Delta_{31}+\delta_{CP})
+\end{equation}
+
+\begin{equation}
+\label{eq:P_bigFormula_3}
+P_3 = cos^2\theta_{23}sin^2{2\theta_{12}}\frac{sin^2(aL)}{(aL)^2}\Delta^2_{21}
+\end{equation}
+
 where $\Delta_{ij}={\Delta}m^2_{ij}L/4E$, and $a={G_F}{N_e}/sqrt(2)$\\
 \end{center}
 
@@ -140,36 +130,3 @@ For $P(\bar{\nu_\mu} \rightarrow \bar{\nu_e})$ one would need to change $\delta_
 
 The figure \ref{fig:LBNF_oscProbability} shows that magnitude and frequency of oscillations both depend on $\delta_{CP}$ and the differences become more significant for higher oscillation nodes which correspond to lower energies of neutrino/antineutrino. Since changes due to different $\delta_{CP}$s are opposite for neutrinos and antineutrinos, it's important for the experiment to operate both.\\
 
-\subsection{Recent Experimental Results}
-The neutrino oscillation parameters measured in other experiments are summarized in the table \ref{tab:MeasuredPars} as quoted in the PDG \cite{ref_PDG} (section Particle Listings $\rightarrow$ Leptons $\rightarrow$ Neutrino Mixing):\\
-\begin{table}[h]
-  \begin{center}
-  \caption{ Neutrino oscillation parameters measured in other experiments}
-  \begin{tabular}{|c|c|c|c|}
-     Parameter & Value and uncerntainty & Experiment(s) \\ \hline
-     $sin^2(2\theta_{12})$ &  $0.846\pm0.021$  &  KamLAND + global solar + SBL +accelerator: 3$\nu$  \\ \hline 
-     $sin^2(2\theta_{23})$ &  $0.999^{+0.001}_{-0.018}$  &  T2K (if normal mass hierarchy)   \\ \hline 
-     $sin^2(2\theta_{23})$ &  $1.000^{+0.000}_{-0.017}$  &  T2K (if inverted mass hierarchy)   \\ \hline 
-     $sin^2(\theta_{13}), 10^{-2}$ &  $9.3\pm0.8$  &  DayaBay, Chooz, Yonggwang    \\ \hline 
-     ${\Delta}m^2_{21}$, $10^{-5} eV^2$ &  $7.53\pm0.18$  &  KamLAND + global solar + SBL +accelerator: 3$\nu$   \\ \hline 
-     ${\Delta}m^2_{32}, 10^{-3} eV^2$ &  $2.44\pm0.06$  &  T2K, MINOS, DAYA(if normal mass hierarchy)     \\ \hline
-     ${\Delta}m^2_{32}, 10^{-3} eV^2$ &  $2.52\pm0.07$  &  T2K, MINOS, DAYA (if inverted mass hierarchy)     \\ \hline 
-  \end{tabular}
-  \label{tab:MeasuredPars}
-  \end{center}
-\end{table}
-
-%Section 14.5 in [REFERENCE] describes measurements of $\Delta{m^2_A}$ and $\theta_A$, splitting between atmospheric neutrino and accelerator experiments results. Section 14.6 reviews measurements of $\theta_{13}$ which was measured recently.
-
-According to Particle Data Group Review \cite{ref_PDG} the following questions will be the main priority to answer by current and future neutrino experiments:
-\begin{itemize}
-  \item whether the massive neutrinos are Dirac or Majorana (Dirac means neutrinos and antineutrinos are dirrefent particles; Majorana means neutrinos are their own's antineutrinos)
-  \item what is the mass hierarchy
-  \item what the absolute values of neutrino masses are
-  \item how does the CP-symmetry behaves in the lepton sector
-  \item are the neutrino oscillations indication of new fundamental symmetry in particle physics
-  \item what is the relation between neutrino and quark mixing if any
-  \item what is the nature of the CP-violation terms in the neutrino mixing matrix
-  \item can better understanding of neutrino mixing give a hint to baryon assymetry in the Universe 
-\end{itemize} 
-In addition, more precise measurement of already measured mixing matrix parameters $\theta_{12}$, $\theta_{23}$, $\theta_{13}$, $|\Delta{m_{12}}^2|$, $|\Delta{m_{31}}^2|$ is also prioritized part of new neutrino experiments physics programs.

@@ -1,35 +1,78 @@
 \subsection{Highlights from LBNF/DUNE Physics Program}
-The primary focus of the LBNF will be to measure the neutrino oscillation parameters involved in formula \ref{eq:P_bigFormula}, especially 
+
+The primary focus of the LBNF will be to measure the neutrino oscillation parameters involved in Formula \ref{eq:P_bigFormula}, especially 
 \begin{itemize}
 \item determine mass hierarchy (sign of $\Delta{m_{32}}$)
 \item measure $\delta_{CP}$ (to determine whether CP-violation presents in lepton sector)
 \item determine octant of $\theta_{32}$ (now $\theta_{32}$ is indistinguishible from $45^0$, and it is not clear whether the angle is greater, smaller, or equal to $45^0$)
 \end{itemize}
-Key advantages of the LBNF/DUNE experiment comparing to other long baseline neutrino experiments (Tab. \ref{tab:compareExps}), are larger baseline which would make the experiment more sensitive to mass hierarchy and CP-violation as discussed before, higher beam power which would produce more neutrinos and larger far detector mass which would allow to register more neutrinos.  
-To extract the desired quantitites, one would build the $P(\nu_\mu \rightarrow \nu_e)$ as a function of neutrino energy and perform fit of the function allowing the measured quantities as fit parameters in assumption of two possible mass hierarchies.\\
+
+To extract the desired quantitites, one would build the $P_{\nu_\mu \rightarrow \nu_e}(E_{\nu})$ as a function of neutrino energy and perform fit of the function allowing the measured quantities as fit parameters in assumption of two possible mass hierarchies. Number of electron neutrinos registered at the far detector and flux of muon neutrinos measured at the near detector integrated over certain amount of time are related as described by Formula \ref{eq:NnueEspectrum} \cite{ref_LisaWhitehead}. \\
+
+\begin{center}
+\begin{equation}
+\label{eq:NnueEspectrum}
+N_{\nu_e}(E_{\nu}) = \frac{dN_{\nu_\mu}(E_{\nu})}{dS} \cdot P_{\nu_\mu \rightarrow \nu_e}(E_{\nu}) \cdot \sigma(E_{\nu}) \cdot \epsilon_{\nu_e} 
+\end{equation}
+\end{center}
+where $N_{\nu_e}(E_{\nu})$ - number of $\nu_e$, $\frac{dN_{\nu_\mu}(E_{\nu})}{dS}$ - flux of $\nu_\mu$ in assumption of no oscillations, $P_{\nu_\mu \rightarrow \nu_e}(E_{\nu})$ - oscillations probability, $\sigma(E_{\nu})$ cross section of $\nu_e$ interaction with liquid argon, $\epsilon_{\nu_e}$ - $\nu_e$ detection efficiency.\\
+
+$N_{\nu_e}(E_{\nu})$ woulb be measured at the FD, $\frac{dN_{\nu_\mu}(E_{\nu})}{dS}$ would be measured at the ND and then extrapolated to the FD using simulation. $P_{\nu_\mu \rightarrow \nu_e}(E_{\nu})$ is the only unknown term in the Formula \ref{eq:NnueEspectrum} and it would be fitted according with \ref{eq:P_bigFormula}.
+
+Key advantages of the LBNF/DUNE experiment comparing to other long baseline neutrino experiments (Tab. \ref{tab:compareExps}), are larger baseline which would make the experiment more sensitive to mass hierarchy and CP-violation as discussed before, higher beam power which would produce more neutrinos and larger far detector mass which would allow to register more neutrinos. 
+
 Volume 2 (Physics) of the LBNF CDR draft reports the results of the experiment sensitivity study, calculates expected significances of each of the values to be measured for different values of exposure for reference and optimized beam designs. Exposure of the experiment is defined as beam power multiplied by far detector mass and by time length of data taking and expressed   $MW \cdot kt \cdot years$ units. For design beam power of 1.07 MW and far detector mass of 40 kt, exposure of 300 $MW \cdot kt \cdot years$ would correspond to 7 years of data-taking.
 
-Expected exposures necessary to reach certain physics goals for reference and optimized beams are summariezed in table \ref{tab:exposures_needed}.
+Expected exposures necessary to reach certain physics goals for reference beam are summariezed in table \ref{tab:exposures_needed}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% if reference beam only
 
 \begin{table}[h]
   \centering
   \begin{center}
   \caption{ The exposure needed to perform measurements with certain precision expressed in $MW \cdot kt \cdot years$. Estimates provided in the table assume normal mass hierarchy and best fit values of the known parameters }
-  \begin{tabular}{|c|c|c|}
+  \begin{tabular}{|c|c|}
   \hline  
-  Physics milestone & Exposure, $MW \cdot kt \cdot years$ & Exposure, $MW \cdot kt \cdot years$ \\ \hline
-   & (reference beam) & (optimized beam) \\ \hline
-  $1^0$ $\theta_{23}$ resolution ($\theta_{23}~=~42^0$) & 70 & 45 \\ \hline
-  CPV at $3\sigma$ $(\delta_{CP}=+\pi/2)$ & 70 & 70 \\ \hline
-  CPV at $3\sigma$ $(\delta_{CP}=-\pi/2)$ & 160 & 100 \\ \hline
-  CPV at $5\sigma$ $(\delta_{CP}=+\pi/2)$ & 280 & 210 \\ \hline
-  MH at $5\sigma$ (at worst) & 400 & 230 \\ \hline
-  $10^0~\delta_{CP}$ resolution at $\delta_{CP}=0$ & 450 & 290 \\ \hline
-  CPV at $5\sigma$ $(\delta_{CP}=-\pi/2)$ & 525 & 320 \\ \hline
-  CPV at $5\sigma$, $50\%$ of $\delta_{CP}$ & 810 & 550 \\ \hline
-  CPV at $3\sigma$, $75\%$ of $\delta_{CP}$ & 1320 & 850 \\ \hline
+  Physics milestone & Exposure  \\ \hline
+   & [$MW \cdot kt \cdot years$]  \\ \hline
+%   & (reference beam)  \\ \hline
+  $1^0$ $\theta_{23}$ resolution ($\theta_{23}~=~42^0$) & 70 \\ \hline
+  CPV at $3\sigma$ $(\delta_{CP}=+\pi/2)$ & 70  \\ \hline
+  CPV at $3\sigma$ $(\delta_{CP}=-\pi/2)$ & 160  \\ \hline
+  CPV at $5\sigma$ $(\delta_{CP}=+\pi/2)$ & 280  \\ \hline
+  MH at $5\sigma$ (at worst) & 400  \\ \hline
+  $10^0~\delta_{CP}$ resolution at $\delta_{CP}=0$ & 450  \\ \hline
+  CPV at $5\sigma$ $(\delta_{CP}=-\pi/2)$ & 525  \\ \hline
+  CPV at $5\sigma$, $50\%$ of $\delta_{CP}$ & 810  \\ \hline
+  CPV at $3\sigma$, $75\%$ of $\delta_{CP}$ & 1320  \\ \hline
   \label{tab:exposures_needed}
   \end{tabular}
   \end{center}
 \end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% if also has optimized beam
+
+%\begin{table}[h]
+%  \centering
+%  \begin{center}
+%  \caption{ The exposure needed to perform measurements with certain precision expressed in $MW \cdot kt \cdot years$. Estimates provided in the table assume normal mass hierarchy and best fit values of the known parameters }
+%  \begin{tabular}{|c|c|c|}
+%  \hline  
+%  Physics milestone & Exposure, $MW \cdot kt \cdot years$ & Exposure, $MW \cdot kt \cdot years$ \\ \hline
+%   & (reference beam) & (optimized beam) \\ \hline
+%  $1^0$ $\theta_{23}$ resolution ($\theta_{23}~=~42^0$) & 70 & 45 \\ \hline
+%  CPV at $3\sigma$ $(\delta_{CP}=+\pi/2)$ & 70 & 70 \\ \hline
+%  CPV at $3\sigma$ $(\delta_{CP}=-\pi/2)$ & 160 & 100 \\ \hline
+%  CPV at $5\sigma$ $(\delta_{CP}=+\pi/2)$ & 280 & 210 \\ \hline
+%  MH at $5\sigma$ (at worst) & 400 & 230 \\ \hline
+%  $10^0~\delta_{CP}$ resolution at $\delta_{CP}=0$ & 450 & 290 \\ \hline
+%  CPV at $5\sigma$ $(\delta_{CP}=-\pi/2)$ & 525 & 320 \\ \hline
+%  CPV at $5\sigma$, $50\%$ of $\delta_{CP}$ & 810 & 550 \\ \hline
+%  CPV at $3\sigma$, $75\%$ of $\delta_{CP}$ & 1320 & 850  \hline
+%  \label{tab:exposures_needed}
+%  \end{tabular}
+%  \end{center}
+%\end{table}
 

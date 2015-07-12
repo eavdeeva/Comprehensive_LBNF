@@ -1,48 +1,79 @@
 \section{Neutrino Oscillations. Theory}
 
-\subsection{Model of Two-Neutrino Oscillations in Vacuum}
-Lets consider two neutrinos case as it's described in the chapter 11 of the Griffiths textbook \cite{ref_Griffiths}.\\
-Suppose there are only two neutrinos $\nu_e$ and $\nu_{\mu}$. Then true stationary states of the system would be the orthogonal combinations:\\
+%\subsection{Model of Two-Neutrino Oscillations in Vacuum}
+
+Consider simplified model of two-neutrino oscillations in vacuum as it is described in \cite{ref_Griffiths}, chapter 11. Suppose there are only two neutrinos $\nu_e$ and $\nu_{\mu}$. Then energy eigenstates of the system would be the orthogonal combinations of neutrino flavor eigenstates:\\
 
 \begin{center}
 $\nu_1=\nu_{\mu}cos\theta-\nu_esin\theta$\\
 $\nu_2=\nu_{\mu}sin\theta+\nu_ecos\theta$\\
 \end{center}
 
-Then, according to the quantum mechanics,\\
+Then, according to the quantum mechanics:\\
 \begin{center}
 $\nu_1(t)=\nu_1(0)e^{\frac{-iE_1t}{\hbar}}$, $\nu_2(t)=\nu_2(0)e^{\frac{-iE_2t}{\hbar}}$\\
 \end{center}
 
-Suppose, at t=0 there were $\nu_e(0)=1$, $\nu_\mu(0)=0$\\
-Then 
+Suppose at t=0 there were $\nu_e(0)=1$, $\nu_\mu(0)=0$. Then:\\ 
 \begin{center}
-$\nu_1(0)=-sin\theta$, $\nu_2(0)=cos\theta$, $\nu_1(t)=-{sin\theta}e^{\frac{-iE_1t}{\hbar}}$, $\nu_2(t)=-{cos\theta}e^{\frac{-iE_2t}{\hbar}}$\\
+$\nu_1(0)=-sin\theta$, $\nu_2(0)=cos\theta$, $\nu_1(t)=-{sin\theta}e^{\frac{-iE_1t}{\hbar}}$, $\nu_2(t)={cos\theta}e^{\frac{-iE_2t}{\hbar}}$\\
 \end{center}
 
 Thus, we are getting the system:\\
 \begin{center}
 $-{sin\theta}e^{-{{iE_1t} \over \hbar}}=\nu_\mu(t)cos\theta-\nu_e(t)sin\theta$,\\
-$-{sin\theta}e^{-{{iE_2t} \over \hbar}}=\nu_\mu(t)sin\theta-\nu_e(t)cos\theta$\\
+${cos\theta}e^{-{{iE_2t} \over \hbar}}=\nu_\mu(t)sin\theta+\nu_e(t)cos\theta$\\
 \end{center}
 
-By solving this sytem for $\nu_e$ and $\nu_\mu$, one would get\\
+By solving this system for $\nu_e$ and $\nu_\mu$, one would get:\\
+
 \begin{center}
-$P_{\nu_e \rightarrow \nu_\mu}=|\nu_\mu(t)|^2=[{sin2\theta}sin{\frac{(E_1-E_2)t}{2\hbar}}]^2$,\\
-$P_{\nu_e \rightarrow \nu_e}=|\nu_e(t)|^2=1-[{sin2\theta}sin{\frac{(E_1-E_2)t}{2\hbar}}]^2$\\
+
+\begin{equation}
+\label{eq:P_twoNu1}
+P_{\nu_e \rightarrow \nu_\mu} = |\nu_\mu(t)|^2=[{sin2\theta}sin{\frac{(E_1-E_2)t}{2\hbar}}]^2
+\end{equation}
+
+\begin{equation}
+\label{eq:P_twoNu2}
+P_{\nu_e \rightarrow \nu_e}=|\nu_e(t)|^2=1-[{sin2\theta}sin{\frac{(E_1-E_2)t}{2\hbar}}]^2
+\end{equation}
+
 \end{center}
 
-Thus, for freely travelling neutrinos, if $\nu_e$ was emmitted, at any point there is a certain probability to register $\nu_e$ or $\nu_\mu$ and those probablities change with time periodically, by $~[sin(At)]^2$ law. That's why the phenomenon is called the neutrino oscillations.
-Suppose momenta $p_1=p_2$. Then using $E^2=p^2+m^2$ and assuming $m_{1,2}<<E_{1,2}$, the probablities will take forms of\\
+According to Formulas \ref{eq:P_twoNu1}-\ref{eq:P_twoNu2}, for freely traveling neutrinos, if $\nu_e$ was emitted, at any point there is certain probability to register $\nu_e$ or $\nu_\mu$, and those probabilities change with time periodically, by $~[sin(At)]^2$ law. That's why the phenomenon is called the neutrino oscillations.
+Suppose momenta $p_1=p_2$. Then using $E^2=p^2+m^2$ and assuming $m_{1,2}\ll E_{1,2}$, the probabilities will take forms of:\\
 \begin{center}
-$P_{\nu_e \rightarrow \nu_\mu}=|\nu_\mu(t)|^2=[{sin2\theta}sin{\frac{(E_1-E_2)t}{2\hbar}}]^2=[{sin2\theta}sin{\frac{(m_1^2-m_2^2)c^3}{4\hbar{E}}z}]^2$\\  
+
+\begin{equation}
+\label{eq:P_twoNu3}
+P_{\nu_e \rightarrow \nu_\mu}=|\nu_\mu(t)|^2=[{sin2\theta}sin{\frac{(E_1-E_2)t}{2\hbar}}]^2=[{sin2\theta}sin{\frac{(m_1^2-m_2^2)c^3}{4\hbar{E}}z}]^2
+\end{equation}
+
+\begin{equation}
+\label{eq:P_twoNu4}
+P_{\nu_e \rightarrow \nu_e}=|\nu_e(t)|^2=1-[{sin2\theta}sin{\frac{(m_1^2-m_2^2)c^3}{4\hbar{E}}z}]^2
+\end{equation}
+
 \end{center}
 
-\subsection{Mechanism of Neutrinos Getting Mass}
+Therefore, for neutrino oscillations to present in the two-neutrino system, it is necessary that
+\begin{itemize}
+  \item {neutrino mixing presents ($\theta \neq 0$)}
+  \item {at least one of two neutrinos is massive, and $m_2 \neq m_1$}
+\end{itemize}
 
-\subsection{Three-Neutrino Oscillation}
+%\subsection{Mechanism of Neutrinos Getting Mass}
 
-Three neutrino case is described in the "Long-baseline Neutrino Oscillation Physics" section of the draft Conteptual Design Report (CDR) of the Long Baseline Neutrino Facility (LBNF). For three neutrino case, the oscillations are determined by complex unitary matrix which is called Pontecorvo-Maki-Nakagava-Sakata (PMNS) matrix:\\
+Neutrinos were believed to be massless for a long time, and the simplified weak interactions theory normally taught in particle physics classes introduces Lagrangian with massless neutrinos \cite{ref_Griffiths}. Experiments for direct neutrino mass measurements were only able to set upper limits on the neutrino masses. However, the neutrino oscillations were experimentally observed and therefore at least two out of three neutrinos must be massive. \\
+
+There are two the most straightforward mechanisms of giving neutrinos masses in the Standard Model: one assumes neutrinos to be Dirac particles ($\nu \neq \bar{\nu}$), and the other one assumes neutrinos to be Majorana particles ($\nu = \bar{\nu}$) \cite{ref_PDG}, \cite{ref_theory_Osc}. If the neutrinos are Dirac, both left-handed and right-handed neutrinos must present in the Standard Model Lagrangian, but the right-handed neutrinos term would be significantly suppressed. Only left-handed neutrinos have been experimentally observed to date which is consistent with assumption that right-handed neutrinos present but are much less likely to participate in weak interactions than left-handed neutrinos. If the neutrinos are Majorana, there is no need for the right-handed neutrino term in the Lagrangian. Majorana neutrinos would mean that there is no lepton flavor number conservation, but lepton flavor number has been observed to be conserved in all phenomena except neutrino oscillations. \\
+
+Remaining part of this chapter considers three-neutrino mixing matrix and $P_{\nu_\mu \rightarrow \nu_e}$ is presence of three neutrinos only for Dirac neutrinos case.\\ 
+
+%\subsection{Three-Neutrino Oscillation}
+
+Three-neutrino case is described in \cite{ref_theory_Osc} and \cite{ref_LBNF_CDR}. For three-neutrino case, the oscillations are determined by complex unitary matrix which is called Pontecorvo-Maki-Nakagava-Sakata (PMNS) matrix:\\
 \begin{center}
 $ \begin{pmatrix} \nu_{e} \\ \nu_{\mu} \\ \nu_{\tau} \\ \end{pmatrix}
  = U_{PMNS}\cdot \begin{pmatrix} \nu_{1} \\ \nu_{2} \\ \nu_{3} \\ \end{pmatrix} = 
@@ -54,7 +85,8 @@ $ \begin{pmatrix} \nu_{e} \\ \nu_{\mu} \\ \nu_{\tau} \\ \end{pmatrix}
  \cdot
 \begin{pmatrix} \nu_{1} \\ \nu_{2} \\ \nu_{3} \\ \end{pmatrix}$\\
 \end{center}
-The $U_{PMNS}$ matrix depends on three neutrino mixing angles ($\theta_{12}$, $\theta_{23}$, $\theta_{13}$) and CP-violating phase $\delta_{CP}$. If define $c_{ab}=cos\theta_(ab)$, $s_{ab}=sin\theta_(ab)$, the $U_{PMNS}$ matrix can be splitted into three multipliers, each would be responsible for mixing of one pair of neutrino flavors:\\
+
+Arbitrary 3x3 unitary matrix can be parametrized by 9 parameters, but 5 of them can be absorbed as Dirac phases which don't change physical properties of the system and, therefore, the $U_{PMNS}$ matrix can be parametrized with three neutrino mixing angles ($\theta_{12}$, $\theta_{23}$, $\theta_{13}$) and one complex phase $\delta$. If define $c_{ab}=cos\theta_{ab}$, $s_{ab}=sin\theta_{ab}$, the $U_{PMNS}$ matrix can be split into three multipliers, each would be responsible for mixing of one pair of neutrino flavors:\\
 \begin{center}
 $U_{PMNS} =
  \begin{pmatrix}
@@ -64,9 +96,9 @@ $U_{PMNS} =
  \end{pmatrix}
  \cdot
  \begin{pmatrix}
-  c_{13} & 0 & e^{i\delta_{CP}}s_{13} \\
+  c_{13} & 0 & e^{i\delta}s_{13} \\
   0 & 1 & 0 \\
-  -e^{i\delta_{CP}}s_{13} & 0 & c_{13} \\
+  -e^{i\delta}s_{13} & 0 & c_{13} \\
  \end{pmatrix}
  \cdot
  \begin{pmatrix}
@@ -75,24 +107,62 @@ $U_{PMNS} =
   0 & 0 & 1 \\
  \end{pmatrix}$ \\
 \end{center}
-The probability amplitudes of neutrino mixing are defined by parameters of the $U_{PMNS}$ but, analogous to simplified two-neutrino case described above, the differences of squares of neutrino masses also contribute to the probability. There are two independent expressionce for squares of masses differences: ${\Delta}m_{12}^2 = m_1^2-m_2^2$ and ${\Delta}m_{32}^2 = m_3^2-m_2^2$. Mass differences were measured in other neutrino oscillation experiments but the ${\Delta}m_{12}^2$ and ${\Delta}m_{32}^2$ present in the equations evenly and therefore the signs of these expressions were not measured. If the masses order as $m_3 > m_2 > m_1$, it's called normal neutrino mass hierarchy because other fundamental particles orders in a way that later generation particles have higher masses than lower generation particles. If the masses order as $m_1 > m_2 > m_3$ it's called inverted neutrino mass hierarchy. The mixing angles $\theta_{12}$, $\theta_{23}$, $\theta_{13}$ and differences of squared masses $|{\Delta}m_{12}^2|$ and $|{\Delta}m_{32}^2|$ are measured and give $U_{PMNS}$ matrix form of\\
+
+Probability $P_{\nu_\mu \rightarrow \nu_e}$ in three-neutrino model in vacuum is given by Formula \ref{eq:P_noMatter} (\cite{ref_theory_Osc}): \\
+\begin{center}
+
+\begin{equation}
+\label{eq:P_noMatter}
+P_{\nu_\mu \rightarrow \nu_e} \simeq P_1 + P_2 + P_3 
+\end{equation}
+
+\begin{equation}
+\label{eq:P_noMatter_1}
+P_1 = sin^2{\theta_{23}}sin^2{2\theta_{13}}sin^2{\Delta_{13}}
+\end{equation}
+
+\begin{equation}
+\label{eq:P_noMatter_2}
+P_2 = sin2\theta_{23}sin2\theta_{13}sin2\theta_{12}sin{\Delta_{31}}\Delta_{21}cos(\Delta_{32}+\delta)
+\end{equation}
+
+\begin{equation}
+\label{eq:P_noMatter_3}
+P_3 = cos^2\theta_{23}cos^2\theta_{31}sin^2{2\theta_{12}}\Delta^2_{21}
+\end{equation}
+
+where $\Delta_{ij}={\Delta}m^2_{ij}L/4E$, E is neutrino energy, and L is distances traveled by neutrino after being produced.\\
+\end{center}
+
+Therefore, $P_{\nu_\mu \rightarrow \nu_e}$ depends on the $U_{PMNS}$ parameters, and the differences of squares of neutrino masses. There are two independent expressions for squares of masses differences: ${\Delta}m_{12}^2 = m_1^2-m_2^2$ and ${\Delta}m_{32}^2 = m_3^2-m_2^2$. The mixing angles $\theta_{12}$, $\theta_{23}$, $\theta_{13}$ and differences of squared masses $|{\Delta}m_{12}^2|$ and $|{\Delta}m_{32}^2|$ are measured and give $U_{PMNS}$ matrix form of\\
 \begin{center}
 $|U_{PMNS}| \sim
  \begin{pmatrix}
   0.8 & 0.5 & 0.2 \\ 0.5 & 0.6 & 0.6 \\ 0.2 & 0.6 & 0.8 \\
  \end{pmatrix}$\\
 \end{center}
-The CP-violating phase $\delta_{CP}$ is unknown.\\*
-The analogous matrix for quark mixing, Cabibbo-Kobayashi-Maskawa (CKM) matrix $V_{CKM}$, is much more diagonal:\\*
+
+The phase $\delta$ is unknown.\\
+
+The analogous matrix for quark mixing, Cabibbo-Kobayashi-Maskawa (CKM) matrix $V_{CKM}$, is much more diagonal:\\
 \begin{center}
 $|V_{CKM}| \sim
  \begin{pmatrix}
   1 & 0.2 & 0.004 \\ 0.2 & 1 & 0.04 \\ 0.008 & 0.04 & 1 \\
  \end{pmatrix}$\\
 \end{center}
+
 One of the important questions in modern particle physics is why the quark mixing angles are so much smaller than neutrino mixing angles and the other important question is whether there is any relationship between quark and neutrino mixing matrices.\\
 
-The \cite{ref_LBNFdoc_volume-physics} gives the following expression for $\nu_\mu \rightarrow \nu_e$ probability in presence of the Earth matter assuming it has constant density: \\
+Overall, precision measurements of neutrino mixing parameters can bring insight into understanding of fundamental particle physics questions.\\
+
+Wave functions of particles and antiparticles are complex-conjugated to each other, and presence of the non-zero complex phase $\delta$ in the mixing matrix would mean different behavior for $\nu_\mu \rightarrow \nu_e$ and $\bar{\nu_\mu} \rightarrow \bar{\nu_e}$ systems. $\delta \neq 0$ would cause charge-spacial parity (CP) violation. Because $|U_{PMNS}|$ mixing matrix involves CP-violating phase, the studies of neutrino oscillations could provide better insight into the origin of matter-antimatter asymmetry in the Universe. When the Universe was created after the Big Bang, there was supposed to be equal amount of matter and antimatter. Then most of matter and antimatter annihilated, and the tiny excess of matter created the whole Universe which we have today. One possible explanation of origin of this tiny excess is CP-violation. It is experimentally known that electromagnetic and strong interactions conserve CP, and it only can be violated in the weak interactions. CP-violation in quark sector has been observed experimentally, and it can also present in in lepton sector due to $\delta$ phase in neutrino mixing matrix. But neutrino oscillations experiments performed before were not sensitive enough to measure $\delta$.\\
+
+Precision measurements of the parameters of $|U_{PMNS}|$ matrix and comparing it to $|V_{CKM}|$ matrix may bring insight whether there is any relation between quark and neutrino mixing. One especially interesting parameter of $|U_{PMNS}|$ matrix is $\theta_{32}$ which is indistinguishable from $45^0$ according to currently available experimental results ($sin^2(2\theta_{23})=0.999^{+0.001}_{-0.018}$ \cite{ref_PDG}). If $\theta_{32}=45^0$ exactly, it might be indication of new, unknown symmetry.\\
+
+Mass differences were measured in other neutrino oscillation experiments, but ${\Delta}m_{12}^2$ and ${\Delta}m_{32}^2$ present in Formula \ref{eq:P_noMatter} evenly and therefore experiments of neutrino oscillations in vacuum are not sensitive to the signs of these expressions. Ordering of neutrino masses is called mass hierarchy. Determining mass hierarchy can bring insight into understanding the flavor symmetry. All the higher generation quarks and charged leptons have higher masses than corresponding lower generation particles (Fig. \ref{fig:StandardModel}), and only ordering of neutrino masses is not known. If the neutrino mass hierarchy will be found to be $m_3>m_2>m_1$, that would mean that masses of all the fundamental particles order the same way from generation to generation. \\
+
+$P_{\nu_\mu \rightarrow \nu_e}$ in presence of matter assuming it has constant density is described by Formula \ref{eq:P_bigFormula} \cite{ref_theory_Osc}: \\
 \begin{center}
 
 \begin{equation}
@@ -107,7 +177,7 @@ P_1 = sin^2{\theta_{23}}sin^2{2\theta_{13}}\frac{sin^2(\Delta_{13}-aL)}{(\Delta_
 
 \begin{equation}
 \label{eq:P_bigFormula_2}
-P_2 = sin2\theta_{23}sin2\theta_{13}sin2\theta_{12}\frac{sin(\Delta_{31}-aL)}{(\Delta_{31}-aL)}\Delta_{31}\frac{sin(aL)}{aL}\Delta_{21}cos(\Delta_{31}+\delta_{CP})
+P_2 = sin2\theta_{23}sin2\theta_{13}sin2\theta_{12}\frac{sin(\Delta_{31}-aL)}{(\Delta_{31}-aL)}\Delta_{31}\frac{sin(aL)}{aL}\Delta_{21}cos(\Delta_{31}+\delta)
 \end{equation}
 
 \begin{equation}
@@ -115,18 +185,18 @@ P_2 = sin2\theta_{23}sin2\theta_{13}sin2\theta_{12}\frac{sin(\Delta_{31}-aL)}{(\
 P_3 = cos^2\theta_{23}sin^2{2\theta_{12}}\frac{sin^2(aL)}{(aL)^2}\Delta^2_{21}
 \end{equation}
 
-where $\Delta_{ij}={\Delta}m^2_{ij}L/4E$, and $a={G_F}{N_e}/sqrt(2)$\\
+where $a={G_F}{N_e}/\sqrt(2)$, $G_F$ is Fermi constant, and $N_e$ is number density of electrons in the Earth.\\
 \end{center}
 
-For $P(\bar{\nu_\mu} \rightarrow \bar{\nu_e})$ one would need to change $\delta_{CP} \rightarrow -\delta_{CP}$ (bacuuse of neutrino-antineutrino assymetry for CP-violationg phase) and $a \rightarrow -a$ (because only electrons present in the Earth, not positrons). The effect of $a \rightarrow -a$ increases with L which means more sensitivity to mass hierarchy for experiments with larger baseline. The planned baseline of the LBNF is 1300 km and it's expected to be enough to determine the neutrino mass hierarchy and also the CP-violation phase.
+For $P(\bar{\nu_\mu} \rightarrow \bar{\nu_e})$ one would need to change $\delta \rightarrow -\delta$ (because of neutrino-antineutrino asymmetry for CP-violation phase) and $a \rightarrow -a$ (because only electrons present in the Earth, not positrons). $a \rightarrow -a$ effect introduces sensitivity to mass hierarchy, and increases with L. It was determined that $m_2>m_1$ however sign of ${\Delta}m_{32}^2$ is unknown. If the masses order as $m_3 > m_2 > m_1$, it's called normal neutrino mass hierarchy (NH), if the masses order as $m_2 > m_1 > m_3$ it is called inverted neutrino mass hierarchy (IH).\\
 
 \begin{figure}
-\caption{$P(\nu_\mu \rightarrow \nu_e)$ at a baseline of 1300 km}
+\caption{$P_{\nu_\mu \rightarrow \nu_e}$ for baseline of L=1300 km}
 \label{fig:LBNF_oscProbability}
 \centering
 \includegraphics[width=0.98\textwidth, keepaspectratio=true]{figs/LBNF_oscProbability.png}
-\\$P(\nu_\mu \rightarrow \nu_e)$ at a baseline of 1300 km, as a function of neutrino energy. Left - neutrinos, right - antineutrinos. Figure is taken from the LBNF CDR draft, volume physics\cite{ref_LBNFdoc_volume-physics}
+\\$P(\nu_\mu \rightarrow \nu_e)$ at a baseline of 1300 km, as a function of neutrino energy. Left - neutrinos, right - antineutrinos. Source of figure: \cite{ref_LBNF_CDR}.
 \end{figure}
 
-The figure \ref{fig:LBNF_oscProbability} shows that magnitude and frequency of oscillations both depend on $\delta_{CP}$ and the differences become more significant for higher oscillation nodes which correspond to lower energies of neutrino/antineutrino. Since changes due to different $\delta_{CP}$s are opposite for neutrinos and antineutrinos, it's important for the experiment to operate both.\\
+The Fig. \ref{fig:LBNF_oscProbability} shows $P_{\nu_\mu \rightarrow \nu_e}$ for baseline of L=1300 km. Magnitude and frequency of oscillations both depend on $\delta$ and the differences become more significant for higher oscillation nodes which correspond to lower energies of neutrino/antineutrino. Changes due to different $\delta$s are opposite for neutrinos and antineutrinos.\\
 
